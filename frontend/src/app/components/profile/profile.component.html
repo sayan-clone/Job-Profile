@@ -1,0 +1,12 @@
+<!--<div *ngIf="profileData">
+    <h2>{{ profileData.name }}</h2>
+    <p>{{ profileData.title }}</p>
+    <p>Email: {{ profileData.email }}</p>
+    <img [src]="profileData.photoUrl" alt="Profile Image" width="200" />
+</div>-->
+<div *ngIf="profileData" class="profile-container">
+  <h1>{{ profileData?.name }}</h1>
+  <p>Email: {{ profileData?.email }}</p>
+  <p>Title: {{ profileData?.title }}</p>
+  <p>Summary: {{ profileData?.summary }}</p>
+</div>

@@ -1,0 +1,46 @@
+# ======================
+# JAVA / SPRING BOOT
+# ======================
+target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/
+!wrapper/maven-wrapper.jar
+
+# ======================
+# ANGULAR / NODE
+# ======================
+node_modules/
+dist/
+.angular/
+npm-debug.log
+
+# ======================
+# IDE FILES
+# ======================
+.idea/
+*.iml
+.vscode/
+
+# ======================
+# OS FILES
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# ENV / SECRET FILES
+# ======================
+.env
+application-local.yml
+application-secret.yml
+
+# ======================
+# TEST OUTPUT
+# ======================
+coverage/

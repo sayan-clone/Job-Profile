@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job-profile-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: job-profile
+  template:
+    metadata:
+      labels:
+        app: job-profile
+    spec:
+      containers:
+      - name: backend
+        image: job-profile-backend
+        ports:
+        - containerPort: 8080
+      - name: frontend
+        image: job-profile-frontend
+        ports:
+        - containerPort: 4200

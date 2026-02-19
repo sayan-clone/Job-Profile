@@ -1,0 +1,15 @@
+<!--<div>
+    <button (click)="previewImage()">Preview Profile Image</button>
+    <div *ngIf="imageUrl">
+        <img [src]="imageUrl" width="300" alt="Preview" />
+    </div>
+</div>
+
+<div style="margin-top: 20px;">
+    <button (click)="downloadFile()">Download Resume</button>
+</div>
+-->
+<div *ngIf="fileUrl">
+  <p>Preview:</p>
+  <iframe [src]="fileUrl | safeUrl" width="100%" height="400px"></iframe>
+</div>
